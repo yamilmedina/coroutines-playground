@@ -1,4 +1,5 @@
-import kotlinx.coroutines.isActive
+package coroutines
+
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withTimeoutOrNull
 import kotlinx.coroutines.yield

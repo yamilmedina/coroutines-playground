@@ -1,3 +1,4 @@
+import coroutines.doWork
 import junit.framework.Assert.assertTrue
 import kotlinx.coroutines.runBlocking
 import org.junit.Test

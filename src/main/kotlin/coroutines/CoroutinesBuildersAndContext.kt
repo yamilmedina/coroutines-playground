@@ -1,3 +1,6 @@
+package coroutines
+
+import kotlinx.coroutines.async
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
@@ -12,6 +15,9 @@ fun main() = runBlocking {
     //we must call this inside a coroutines context
     //so we use runBlocking context builder to be able to call.
     doWork()
+
+    println("Finishing in 1.5 secs.")
+    async { doWork() }.await()
 }
 
 /**
