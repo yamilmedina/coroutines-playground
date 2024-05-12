@@ -15,7 +15,7 @@ fun execWithThreads() {
         sleep(1_000)
         println("World!")
     }
-    print("Hello, ")
+    print("T:Hello, ")
 }
 
 fun execWithCoroutines() {
@@ -23,6 +23,6 @@ fun execWithCoroutines() {
         delay(1_000)
         println("World!")
     }
-    print("Hello, ")
+    print("C:Hello, ")
     sleep(1_500)
 }
